@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-iJ-HA3">
+                                <rect key="frame" x="161" y="333" width="92" height="45"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Nc5-Wk-5Mf"/>
+                                </constraints>
+                                <state key="normal" title="开始倒计时">
+                                    <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RbR-U7-ARX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bac-Li-wjw">
+                                <rect key="frame" x="161" y="407" width="92" height="45"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="暂停">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="supendClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdt-de-YLI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR8-oc-PKv">
+                                <rect key="frame" x="161" y="482" width="92" height="45"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="继续">
+                                    <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ff8-ZT-nwI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GPv-iJ-HA3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-92.5" id="7i7-g7-g8q"/>
+                            <constraint firstItem="bac-Li-wjw" firstAttribute="width" secondItem="GPv-iJ-HA3" secondAttribute="width" id="83V-Re-JWa"/>
+                            <constraint firstItem="JR8-oc-PKv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BHv-fd-w3n"/>
+                            <constraint firstItem="bac-Li-wjw" firstAttribute="height" secondItem="GPv-iJ-HA3" secondAttribute="height" id="Coh-0V-VsR"/>
+                            <constraint firstItem="JR8-oc-PKv" firstAttribute="top" secondItem="bac-Li-wjw" secondAttribute="bottom" constant="30" id="Igv-mQ-IFg"/>
+                            <constraint firstItem="JR8-oc-PKv" firstAttribute="height" secondItem="bac-Li-wjw" secondAttribute="height" id="UqV-WR-q2X"/>
+                            <constraint firstItem="bac-Li-wjw" firstAttribute="top" secondItem="GPv-iJ-HA3" secondAttribute="bottom" constant="29" id="pPP-Gs-qs4"/>
+                            <constraint firstItem="GPv-iJ-HA3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rYa-uW-hAB"/>
+                            <constraint firstItem="bac-Li-wjw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sIF-rA-Txe"/>
+                            <constraint firstItem="JR8-oc-PKv" firstAttribute="width" secondItem="bac-Li-wjw" secondAttribute="width" id="xsU-Ky-15s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="GPv-iJ-HA3" id="KQn-Iz-WEt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
